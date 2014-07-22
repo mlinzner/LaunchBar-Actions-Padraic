@@ -25,3 +25,16 @@ clicky_site_ids.push(100756122);
   s.src = '//static.getclicky.com/js';
   ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
 })();
+
+$(document).ready(function() {
+  $('#slider').slideme({
+	   arrows: false
+	  ,autoslide: true
+	  ,autoslideHoverStop: false
+	  ,css3: true
+	  ,interval: 1500
+	  ,loop: true
+	  ,speed: 250
+	  ,transition:'fade'
+  });
+});
