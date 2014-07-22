@@ -1,6 +1,11 @@
-#fffslider .slideme {
+#header-slider .slideme {
 	width: 270px;
 	height: 270px;
+}
+
+#slider .slideme {
+	width: 400px;
+	height: 400px;
 }
 
 .slideme_container {
