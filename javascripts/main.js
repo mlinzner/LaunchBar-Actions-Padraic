@@ -36,5 +36,6 @@ $(document).ready(function() {
 	  ,loop: true
 	  ,speed: 250
 	  ,transition:'fade'
+    ,labels: {next: '→', prev: '←'}
   });
 });
