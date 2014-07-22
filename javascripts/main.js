@@ -27,7 +27,7 @@ clicky_site_ids.push(100756122);
 })();
 
 $(document).ready(function() {
-  $('#slider').slideme({
+  $('.slides').slideme({
 	   arrows: false
 	  ,autoslide: true
 	  ,autoslideHoverStop: false
