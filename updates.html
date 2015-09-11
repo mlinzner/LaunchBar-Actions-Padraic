@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Action Updates LaunchBar Action</title>
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@prenagha">
+    <meta name="twitter:title" content="Action Updates LaunchBar Action">
+    <meta name="twitter:description" content="LaunchBar action checks your custom actions for updates.">
+    <meta name="twitter:image" content="http://prenagha.github.io/launchbar/img/upd1.png">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/slideme.js"></script>
+    <link rel="stylesheet" href="stylesheets/slideme.css" type="text/css" media="all"/>
+    <link rel="alternate" type="application/atom+xml" title="Padraic Renaghan LaunchBar Actions" href="/launchbar/feed.xml" />
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="http://www.obdev.at/products/launchbar/index.html"><img src="images/lb.png" height="75" width="75"/></a>
+        <a href="index.html"><h1>LaunchBar Actions</h1></a>
+        <p class="view"><a href="https://github.com/prenagha/launchbar">View on GitHub <small>prenagha/launchbar</small>
+          <img src="images/github.png" height="50" width="50"/></a></p>
+        <p class="view"><a href="https://twitter.com/prenagha">Twitter <small>@prenagha</small>
+          <img src="images/tw.png" height="50" width="50"/></a></p>
+        <p class="view"><a href="/launchbar/feed.xml"><i class="fa fa-rss"></i> News Feed</a></p>
+      </header>
+      <section>
+        <h2><i class="fa fa-wrench fa-lg"></i> Action Updates</h2>
+
+        <p><a href="https://dl.dropboxusercontent.com/u/1094926/lbdist/Updates.lbaction"><i class="fa fa-download fa-lg"></i> Download signed Updates.lbaction</a></p>
+
+        <p>Action that checks custom actions to check to see if new version is available. Actions must specify a <code>/LBDescription/LBUpdateInfo</code> key in the Info.plist of their action pointing at the URL which returns the Info.plist of the latest version of the action. Additionally they may specify a <code>/LBDescription/LBUpdateDownload</code> key specifying the URL to download the latest <code>.lbaction</code> package of the action.</p>
+
+        <div id="slider" class="slides">
+          <ul class="slideme">
+            <li><img src="img/upd1.png" alt="Update Status"></li>
+            <li><img src="img/upd2.png" alt="Update Actions"></li>
+          </ul>
+        </div>
+        
+      </section>
+    </div>
+    <script src="javascripts/main.js"></script>    
+  </body>
+</html>
