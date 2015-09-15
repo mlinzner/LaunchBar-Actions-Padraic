@@ -55,7 +55,7 @@ $(document).ready(function() {
       var u = data.indexOf("<string>", k);
       var e = data.indexOf("</string>", u);
       var c = data.slice(u+8, e).trim().replace(/[ \t]+/gm," ");
-      $cl.html("Latest Version " + ver + "\nChanges\n" + c);
+      $cl.html("Latest Version " + ver + "\nChanges\n " + c);
     });
   }
 });
