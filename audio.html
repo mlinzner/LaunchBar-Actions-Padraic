@@ -18,7 +18,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="javascripts/slideme.js"></script>
     <link rel="stylesheet" href="stylesheets/slideme.css" type="text/css" media="all"/>
     <link rel="alternate" type="application/atom+xml" title="Padraic Renaghan LaunchBar Actions" href="/launchbar/feed.xml" />
@@ -42,6 +42,7 @@
         <p>Action that lets you switch Input and Output Audio devices. Requires <a href="https://github.com/deweller/switchaudio-osx">switchaudio-osx</a> which is most easily installed via <a href="http://brew.sh">homebrew</a> <code>brew install switchaudio-osx</code> (command must be installed to <code>/usr/local/bin/SwitchAudioSource</code>).</p>
         <p>When invoked it returns items for each output device (headphones) and each input device (microphone). The currently selected item for each is prefixed with *. Select an item and hit enter to switch to that item, the action will respond by refreshing the items and you should note the * by the item you just selected.</p>
 
+        <pre id="changelog" data-name="Switch Audio"></pre>        
         <p><small>Supports <a href="updates.html">Action Updates</a> framework and action</small>
 
         <div id="header-slider" class="slides">

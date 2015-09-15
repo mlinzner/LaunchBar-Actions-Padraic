@@ -1,3 +1,6 @@
+//var CLOG = /<key>LBChangelog<\/key>.*?<string>(.*?)<\/string>/gm;
+var CLOG =  /<key>LBChangelog<\/key>\s+<string>(\s+)</gm;
+
 var metas = document.getElementsByTagName('meta');
 var i;
 if (navigator.userAgent.match(/iPhone/i)) {
@@ -38,4 +41,21 @@ $(document).ready(function() {
 	  ,transition:'fade'
     ,labels: {next: '→', prev: '←'}
   });
+  
+  var $cl = $('#changelog').first();
+  if ($cl) {
+    var url = "https://raw.githubusercontent.com/prenagha/launchbar/master/" + $cl.data("name") + ".lbaction/Contents/Info.plist";
+    $.get(url, function(data) {
+      var a = data.indexOf("<key>CFBundleVersion</key>");
+      var b = data.indexOf("<string>", a);
+      var c = data.indexOf("</string>", b);
+      var ver = data.slice(b+8, c);
+    
+      var k = data.indexOf("<key>LBChangelog</key>");
+      var u = data.indexOf("<string>", k);
+      var e = data.indexOf("</string>", u);
+      var c = data.slice(u+8, e).trim();
+      $cl.html("Latest Version " + ver + "\nChanges: " + c);
+    });
+  }
 });
