@@ -54,7 +54,7 @@ $(document).ready(function() {
       var k = data.indexOf("<key>LBChangelog</key>");
       var u = data.indexOf("<string>", k);
       var e = data.indexOf("</string>", u);
-      var c = data.slice(u+8, e).trim().replace(/\w+/gm," ");
+      var c = data.slice(u+8, e).trim().replace(/\s+/gm," ");
       $cl.html("Latest Version " + ver + "\nChanges: " + c);
     });
   }
